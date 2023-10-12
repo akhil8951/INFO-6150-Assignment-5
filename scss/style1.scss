@@ -1,0 +1,108 @@
+@import "config";
+@import "resets";
+
+@include backgroundProperties(url(/images/carFleet.jpg));
+
+main {
+  padding-top: 5rem;
+  @extend %padding-placeholder;
+
+  .cars-container {
+    &-title {
+      //   border: 1px solid $primary-color;
+      background-color: rgba($color: white, $alpha: 0.1);
+      border-radius: 10px;
+      display: flexbox;
+    }
+    &-body {
+      //   border: 1px solid $primary-color;
+      background-color: rgba($color: white, $alpha: 0.1);
+      border-radius: 10px;
+      display: flexbox;
+      padding: 1rem;
+
+      .grid {
+        display: grid;
+        padding-top: 20px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 2rem;
+        width: 20rem;
+        align-items: center;
+      }
+      .grid-items {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        border-radius: 2rem;
+        height: 14rem;
+        width: 16rem;
+        padding: 10px;
+      }
+      .image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        transition: background-image 0.3s;
+        border-radius: 1rem;
+      }
+      .item1 .image {
+        background-image: url("/images/carlogos/audi.png");
+      }
+      .item1 .image:hover {
+        background-image: url("/images/bentley.jpg");
+      }
+      .item2 .image {
+        background-image: url("/images/carlogos/astonmartin.png");
+      }
+      .item2 .image:hover {
+        background-image: url("/images/bentley.jpg");
+      }
+      .item3 .image {
+        background-image: url("/images/carlogos/bentley.png");
+      }
+      .item3 .image:hover {
+        background-image: url("/images/bentley.jpg");
+      }
+      .item4 .image {
+        background-image: url("/images/carlogos/bmw.png");
+      }
+      .item4 .image:hover {
+        background-image: url("/images/bentley.jpg");
+      }
+      .item5 .image {
+        background-image: url("/images/carlogos/cadillac.png");
+      }
+      .item5 .image:hover {
+        background-image: url("/images/bentley.jpg");
+      }
+      .item6 .image {
+        background-image: url("/images/carlogos/maserati.png");
+      }
+      .item6 .image:hover {
+        background-image: url("/images/bentley.jpg");
+      }
+      .item7 .image {
+        background-image: url("/images/carlogos/mercedes.png");
+      }
+      .item7 .image:hover {
+        background-image: url("/images/bentley.jpg");
+      }
+      .item8 .image {
+        background-image: url("/images/carlogos/porsche.png");
+      }
+      .item8 .image:hover {
+        background-image: url("/images/bentley.jpg");
+      }
+      .item9 .image {
+        background-image: url("/images/carlogos/volvo.png");
+      }
+      .item9 .image:hover {
+        background-image: url("/images/bentley.jpg");
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Rokkitt&family=Urbanist:wght@500&display=swap");
+$font-family1: "Playfair Display", serif;
+$font-family2: "Rokkitt", serif;
+$font-family3: "Urbanist", sans-serif;
+$font-weights: (
+  "regular": 400,
+  "medium": 600,
+  "bold": 700,
+);
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+%padding-placeholder {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@mixin backgroundProperties($imagePath) {
+  body {
+    display: flex;
+    flex-direction: column;
+    background-image: $imagePath;
+    //background-color: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: calc(5% - 0px) calc(5% - 0px);
+    font-family: $font-family1;
+  }
+
+  .wrapper {
+    flex: 1;
+  }
+
+  header {
+    height: 4.5rem;
+    // border-bottom: 1px solid $primary-color;
+    //   background-color: $back-color;
+
+    img {
+      height: 3.5rem;
+      padding: 0.1rem;
+    }
+    img:hover {
+      opacity: 70%;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    ul {
+      display: flex;
+      padding-top: 0.75rem;
+      padding-right: 0.5rem;
+      list-style-type: none;
+    }
+    li {
+      padding: 0.5em;
+    }
+    a {
+      text-decoration: none;
+      color: $primary-color;
+    }
+    a:hover {
+      color: $secondary-color;
+    }
+  }
+  footer {
+    color: white;
+  }
+}
+
+$primary-color: black;
+$secondary-color: #aab094;
+$text-color: white;
+$secondaryText-Color: grey;

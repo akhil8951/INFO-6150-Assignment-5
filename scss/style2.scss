@@ -1,0 +1,69 @@
+@import "config";
+@import "resets";
+
+@include backgroundProperties(url("/images/rollsRoyce2.jpg"));
+
+main {
+  padding-top: 5rem;
+  @extend %padding-placeholder;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    .column {
+      background-color: rgba($color: white, $alpha: 0.3);
+      border: 1px solid black;
+      border-radius: 5px;
+      text-align: center;
+      padding: 20px;
+
+      img {
+        height: 10rem;
+      }
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 20px;
+      justify-content: space-evenly;
+      font-weight: weight(bold);
+    }
+    .form-group {
+      padding: 1rem;
+      gap: 10px;
+      input,
+      label,
+      textarea,
+      select {
+        font-weight: weight(bold);
+        padding: 0.5em;
+        height: 2rem;
+        border: none;
+        border-radius: 1rem;
+        width: 55%;
+      }
+      button {
+        border: none;
+        height: 2rem;
+        width: 5rem;
+        border-radius: 1em;
+        color: $text-color;
+        background-color: #cca760;
+      }
+      .button1 {
+        border: none;
+        height: 2rem;
+        width: 10rem;
+        border-radius: 1em;
+        color: $text-color;
+        background-color: #cca760;
+      }
+      button:hover {
+        background-color: #36301a;
+      }
+    }
+  }
+}
