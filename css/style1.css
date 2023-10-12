@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Rokkitt&family=Urbanist:wght@500&display=swap");
+main {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/images/carFleet.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: calc(5% - 0px) calc(5% - 0px);
+  font-family: "Playfair Display", serif;
+}
+
+.wrapper {
+  flex: 1;
+}
+
+header {
+  height: 4.5rem;
+}
+header img {
+  height: 3.5rem;
+  padding: 0.1rem;
+}
+header img:hover {
+  opacity: 70%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+  padding-top: 0.75rem;
+  padding-right: 0.5rem;
+  list-style-type: none;
+}
+header li {
+  padding: 0.5em;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a:hover {
+  color: #aab094;
+}
+
+footer {
+  color: white;
+}
+
+main {
+  padding-top: 5rem;
+}
+main .cars-container-title {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flexbox;
+}
+main .cars-container-body {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flexbox;
+  padding: 1rem;
+}
+main .cars-container-body .grid {
+  display: grid;
+  padding-top: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem;
+  width: 20rem;
+  align-items: center;
+}
+main .cars-container-body .grid-items {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 2rem;
+  height: 14rem;
+  width: 16rem;
+  padding: 10px;
+}
+main .cars-container-body .image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: background-image 0.3s;
+  border-radius: 1rem;
+}
+main .cars-container-body .item1 .image {
+  background-image: url("/images/carlogos/audi.png");
+}
+main .cars-container-body .item1 .image:hover {
+  background-image: url("/images/bentley.jpg");
+}
+main .cars-container-body .item2 .image {
+  background-image: url("/images/carlogos/astonmartin.png");
+}
+main .cars-container-body .item2 .image:hover {
+  background-image: url("/images/bentley.jpg");
+}
+main .cars-container-body .item3 .image {
+  background-image: url("/images/carlogos/bentley.png");
+}
+main .cars-container-body .item3 .image:hover {
+  background-image: url("/images/bentley.jpg");
+}
+main .cars-container-body .item4 .image {
+  background-image: url("/images/carlogos/bmw.png");
+}
+main .cars-container-body .item4 .image:hover {
+  background-image: url("/images/bentley.jpg");
+}
+main .cars-container-body .item5 .image {
+  background-image: url("/images/carlogos/cadillac.png");
+}
+main .cars-container-body .item5 .image:hover {
+  background-image: url("/images/bentley.jpg");
+}
+main .cars-container-body .item6 .image {
+  background-image: url("/images/carlogos/maserati.png");
+}
+main .cars-container-body .item6 .image:hover {
+  background-image: url("/images/bentley.jpg");
+}
+main .cars-container-body .item7 .image {
+  background-image: url("/images/carlogos/mercedes.png");
+}
+main .cars-container-body .item7 .image:hover {
+  background-image: url("/images/bentley.jpg");
+}
+main .cars-container-body .item8 .image {
+  background-image: url("/images/carlogos/porsche.png");
+}
+main .cars-container-body .item8 .image:hover {
+  background-image: url("/images/bentley.jpg");
+}
+main .cars-container-body .item9 .image {
+  background-image: url("/images/carlogos/volvo.png");
+}
+main .cars-container-body .item9 .image:hover {
+  background-image: url("/images/bentley.jpg");
+}/*# sourceMappingURL=style1.css.map */
